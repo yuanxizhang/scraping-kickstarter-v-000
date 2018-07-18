@@ -10,4 +10,3 @@ projects << kickstarter.css("li.project grid_4").text
 
 puts kickstarter.css("li.project grid_4").first
 
-binding.pry
