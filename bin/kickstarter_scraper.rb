@@ -14,7 +14,7 @@ project_hash.each |k, v| do
   # title: project.css("h2.bbcard_name strong a").text
   k = kickstarter.css("h2.bbcard_name strong a").text
   v = project
-  project[:image_link] = kickstarter.css("h2.bbcard_name strong a").text
+  project[:image_link] = kickstarter.css("div.project-thumbnail a img")
 
 puts kickstarter.css("h2.bbcard_name strong a").text
 
