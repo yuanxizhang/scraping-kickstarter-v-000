@@ -8,11 +8,13 @@ kickstarter = Nokogiri::HTML(html)
 
 # projects: kickstarter.css("li.project.grid_4")
 project_hash = {}
-projects = kickstarter.css("li.project grid_4")
-projec
+project_hash[:projects] = kickstarter.css("li.project grid_4")
+project_hash.each |k, v| do
   project = {}
   # title: project.css("h2.bbcard_name strong a").text
-  project[title] = kickstarter.css("h2.bbcard_name strong a").text
+  k = kickstarter.css("h2.bbcard_name strong a").text
+  v = project
+  project[]
 
 puts kickstarter.css("h2.bbcard_name strong a").text
 
