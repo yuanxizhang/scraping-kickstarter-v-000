@@ -11,6 +11,7 @@ require 'pry'
 def create_project_hash
   #read the HTML file 
   html = File.read('../fixtures/kickstarter.html') 
+  puts html
   kickstarter = Nokogiri::HTML(html)
   
   projects = {}
