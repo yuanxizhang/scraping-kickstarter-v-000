@@ -28,13 +28,5 @@ end
 
 
   
-  project[:image_link] = project.css("div.project-thumbnail a img").attribute("src").value
-  project[:description] = project.css("p.bbcardblurb").text
-  project[:location] = project.css("ul.project-meta span.location-name").text
-  project[:percent_funded] = project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
-  k_project = _
-end
-
-binding.pry
-
+  
 
