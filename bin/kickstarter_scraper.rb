@@ -9,7 +9,8 @@ kickstarter = Nokogiri::HTML(html)
 # projects: kickstarter.css("li.project.grid_4")
 projects = []
 projects << kickstarter.css("li.project grid_4").text
-
+project = {}
+project[title] = 
 puts kickstarter.css("li.project grid_4").first
 
 binding.pry
