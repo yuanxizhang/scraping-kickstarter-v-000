@@ -18,6 +18,7 @@ project_hash[:projects].each |k, v| do
   project[:description] = kickstarter.css("div.project-thumbnail a img")
   project[:location] = kickstarter.css("div.project-thumbnail a img")
   project[:percent_funded] = kickstarter.css("div.project-thumbnail a img")
+end
 
 puts kickstarter.css("h2.bbcard_name strong a").text
 
