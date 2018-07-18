@@ -10,7 +10,7 @@ require 'pry'
 
 def create_project_hash
   #read the HTML file 
-  path = Dir.glob('../fixtures/*.html').first
+  path = Dir.glob('../fixtures/kickstarter.html').first
   html = File.read(path) 
   
   kickstarter = Nokogiri::HTML(html)
