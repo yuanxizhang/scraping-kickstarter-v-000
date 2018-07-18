@@ -13,6 +13,7 @@ projects.each |p| do
   project = {}
   project[title] = kickstarter.css("h2.bbcard_name strong a").text
 end  
-puts kickstarter.css("li.project grid_4").first
+
+puts kickstarter.css("h2.bbcard_name strong a").text
 
 binding.pry
