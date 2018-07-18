@@ -20,7 +20,7 @@ project_hash[:projects].each |k, v| do
   v = project
   
   project[:image_link] = kickstarter.css("div.project-thumbnail a img").attribute("src").value
-  project[:description] = kickstarter.css("p.bbcardblurb")
+  project[:description] = kickstarter.css("p.bbcardblurb").text
   project[:location] = kickstarter.css("span.location-name").text
   project[:percent_funded] = kickstarter.css("ul.project-stats li.first.funded strong").text.to_i
   k_project = _
