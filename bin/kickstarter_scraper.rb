@@ -16,7 +16,7 @@ def create_project_hash
   projects = {}
   kickstarter.css("li.project grid_4").each do |project| do
   
-    projects[peoject] = {}
+    projects[project] = {}
   k = kickstarter.css("h2.bbcard_name strong a").text
   v = project
   
