@@ -6,6 +6,6 @@ html = File.read('fixtures/kickstarter.html')
 
 kickstarter = Nokogiri::HTML(html)
 projects = []
-projects << kickstarter.css(".project grid_4").text
+projects << kickstarter.css("li.project grid_4").text
 
-puts kickstarter.css(".project grid_4").text[0]
+puts kickstarter.css("li.project grid_4").first
