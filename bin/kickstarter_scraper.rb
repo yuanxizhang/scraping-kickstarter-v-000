@@ -10,7 +10,7 @@ kickstarter = Nokogiri::HTML(html)
 projects = []
 projects << kickstarter.css("li.project grid_4").text
 project = {}
-project[title] = kickstarter.css("li.project grid_4").text
+project[title] = kickstarter.css("h2.bbcard_name strong a").text
 puts kickstarter.css("li.project grid_4").first
 
 binding.pry
