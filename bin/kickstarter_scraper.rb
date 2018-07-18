@@ -11,6 +11,7 @@ projects = []
 projects << kickstarter.css("li.project grid_4")
 projects.each |p| do
   project = {}
+  # title: project.css("h2.bbcard_name strong a").text
   project[title] = kickstarter.css("h2.bbcard_name strong a").text
 end  
 
