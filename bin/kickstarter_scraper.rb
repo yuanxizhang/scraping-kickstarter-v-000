@@ -16,4 +16,4 @@ end
 
 puts kickstarter.css("h2.bbcard_name strong a").text
 
-binding.pry
+
