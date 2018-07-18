@@ -8,4 +8,4 @@ kickstarter = Nokogiri::HTML(html)
 projects = []
 projects << kickstarter.css(".project grid_4").text
 
-puts
+puts projects[0 ... 4]
