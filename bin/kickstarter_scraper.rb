@@ -1,4 +1,5 @@
 require 'nokogeri'
+require 'pry'
 
 #read the HTML file 
 html = File.read('fixtures/kickstarter.html') 
